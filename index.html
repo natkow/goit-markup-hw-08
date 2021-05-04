@@ -22,7 +22,7 @@
             <nav class="nawigation">
                 <ul class="navigation-list list">
                     <!-- Nawigacja do innych stron -->
-                    <li class="navigation-list-item">
+                    <li class="navigation-list-item-now">
                         <a class="navigation-list-link link" href="#">Agencja</a>
                     </li>
                     <li class="navigation-list-item"><a class="navigation-list-link link"
@@ -50,7 +50,7 @@
         <section class="header-tittle section container">
             <div class="container">
                 <h1 class="main-tittle">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button type="Button" class="tittle-button">"Zamów usługę"</button>
+                <button type="Button" class="tittle-button" data-modal-open>"Zamów usługę"</button>
             </div>
         </section>
         
@@ -115,12 +115,15 @@
         <div class="container">
             <h2 class="about-us">Czym się zajmujemy?</h2>
             <ul class="about-list list">
-                <li><img class="about-us-img" src="./images/index/keyboard.jpg" alt="Pisanie na klawiaturze" width="370"
+                <li class="about-us-item"><img class="about-us-img" src="./images/index/keyboard.jpg" alt="Pisanie na klawiaturze" width="370"
                         height="294">
+                        <p class="about-us-text">Aplikacje komputerowe</p>
                 </li>
-                <li><img class="about-us-img" src="./images/index/mobile.jpg" alt="Obsługa telefonu" width="370" height="294">
+                <li class="about-us-item"><img class="about-us-img" src="./images/index/mobile.jpg" alt="Obsługa telefonu" width="370" height="294">
+                    <p class="about-us-text">Aplikacje mobilne</p>
                 </li>
-                <li><img class="about-us-img" src="./images/index/tablet.jpg" alt="Obsługa tableta" width="370" height="294">
+                <li class="about-us-item"><img class="about-us-img" src="./images/index/tablet.jpg" alt="Obsługa tableta" width="370" height="294">
+                    <p class="about-us-text">Rozwiązania graficzne</p>
                 </li>
             </ul>
         </div>
@@ -316,13 +319,21 @@
                                     </svg></a></li>
                         </ul>
                     </div>
-                </div>
-                
-                    
-
-               
-                
+                </div>                    
     </footer>
+    
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+            <svg class="close-icon" width="11" height="11">
+                <use href="./images/modal/close.svg#icon-Vector">
+                </use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
+
 
 
 </body>

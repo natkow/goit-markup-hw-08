@@ -280,8 +280,7 @@
                             <use href="./images/icons.svg#icon-Logo5"></use>
                         </svg></a>
                 </li>
-            </ul>       
-
+            </ul> 
         </div>
     </section>
 
@@ -318,17 +317,17 @@
                         </ul>
                     </div>
                 <div class="newsletter">
-                    <h2 class="news-tittle">Zapisz się do newslettera</h2>
-                    <input type="email" name="email" class="news-mail" placeholder="Email">
-                    <div class="modal-news-button">
+                    <form action="#" method="post">
+                        <label for="email">
+                            <h2 class="news-tittle">Zapisz się do newslettera</h2>
+                            <input type="email" name="email" class="news-mail" placeholder="Email">
+                        </label>
+
                         <button class="news-button" type="submit">Zapisz się</button>
-                            <svg class="logo-news">
+                        <svg class="logo-news">
                             <use href="./images/icon.svg#icon-icon-send" width="24" height="24"></use>
                         </svg>
-
-                        
-
-                    </div>
+                    </form>
 
                 </div>
             </div>                    
@@ -345,35 +344,30 @@
         <form class="modal-form" action="#" method="post">
             <h2 class="main-tittle-form">Zostaw swoje dane w formularzu poniżej</h2>
             <label for="name" class="modal-label">Imie</label>
-            <input type="text" name="name" class="modal-input" required>  
-            <div class="modal-icon-position">
-                <div class="modal-icon">
-                    <svg class="modal-icon2" width="12" height="12">
-                        <use href="./images/icon.svg#icon-person-black">
-                        </use>
-                    </svg>
-                </div>
+            <input type="text" name="name" class="modal-input" required> 
+            <div class="modal-section">
+                <svg class="modal-icon2" width="12" height="12">
+                    <use href="./images/icons.svg#icon-person-black">
+                    </use>
+                </svg>
             </div>
-
+            
             <label for="telefon" class="modal-label">Telefon</label>
             <input type="tel" name="telefon" class="modal-input" required>
-            <div class="modal-icon-position">
-                <div class="modal-icon">
-                    <svg class="modal-icon2" width="13" height="13">
-                        <use href="./images/icon.svg#icon-phone-black">
-                        </use>
-                    </svg>
-                </div>
+            <div class="modal-section">
+                <svg class="modal-icon2" width="13" height="13">
+                    <use href="./images/icons.svg#icon-phone-black">
+                    </use>
+                </svg>
             </div>
+            
             <label for="email" class="modal-label">Email</label>
             <input type="email" name="email" class="modal-input" required>
-            <div class="modal-icon-position">
-                <div class="modal-icon">
-                    <svg class="modal-icon2" width="15" height="12">
-                        <use href="./images/icon.svg#icon-email-black">
-                        </use>
-                    </svg>
-                </div>
+            <div class="modal-section">
+                <svg class="modal-icon2" width="12" height="12">
+                    <use href="./images/icons.svg#icon-email-black">
+                    </use>
+                </svg>
             </div>
             <label for="Komentarz" class="modal-label">Komentarz</label>
             <textarea name="komentarz" id="textarea" cols="12" rows="16" class="modal-textarea">Wprowadź tekst</textarea>

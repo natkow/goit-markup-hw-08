@@ -195,7 +195,7 @@ img {
   color: #ffffff;
   width: 696px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 102.667px;
   margin-bottom: 30px;
 }
 
@@ -752,9 +752,6 @@ img {
   padding-left: 42px;
   margin-left: 370px;
   margin-top:-50px;
-}
-
-.modal-news-button{
   position: relative;
 }
 
@@ -785,6 +782,10 @@ img {
   pointer-events: none;
 }
 
+.backdrop.is-hidden {
+  transition: all 500ms linear 500ms;
+}
+
 .modal {
   position: absolute;
   left: 50%;
@@ -810,15 +811,6 @@ img {
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.modal svg {
-  position: absolute;
-  fill: black;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 .close-icon {
@@ -852,7 +844,6 @@ img {
   color: #757575;
   margin-bottom: 4px;
   margin-left: 40px;
-  
 }
 
 .modal-input {
@@ -878,9 +869,9 @@ img {
   border-color: var(--secondary-color);
 }
 
-.modal-input:focus + .modal-icon{
+.modal-input:focus + .modal-section {
   outline:none;
-  fill:var(--secondary-color);
+  fill:#2196F3;
 }
 
 .modal-input,
@@ -888,15 +879,13 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon-position{
+.modal-section{
   position: relative;
 }
 
-.modal-icon{
+.modal-icon2{
   position: absolute;
-  left:55px;
-  top: -30px;
-  
+  transform: translate(55px,-36px);
 }
 
 .modal-textarea{
@@ -937,6 +926,7 @@ img {
   justify-content: flex-start;
   align-items: center;
   margin-top:20px;
+  margin-left: 54px;
 }
 
 .modal-disclaimer-button{
@@ -974,5 +964,39 @@ img {
   cursor: pointer;
   
 }
+
+.modal-form-policy-text::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  outline: 1px solid #000;
+  transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal-form-policy:checked + .modal-form-policy-text::before {
+  background-color: var(--secondary-color);
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 8px;
+  border-color: var(--secondary-color);
+  outline: 1px solid var(--secondary-color);
+  background-position: center;
+}
+
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+
+
 
 /* ======= END Backdrop ======= */

@@ -1,0 +1,74 @@
+@import '../utils/variables';
+
+.header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  margin-right: 164px;
+  width: 307px;
+  position: relative;
+  &__item {
+    display: block;
+    padding-right: 46px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+
+    &--underline::after {
+      content: '';
+      position: absolute;
+      width: 53px;
+      height: 4px;
+      top: 52px;
+      background: #2196f3;
+      border-radius: 2px;
+      transform: translateX(-55px);
+    }
+  }
+
+  &--color {
+    color: getColor(font-dark);
+  }
+
+  &__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: getColor(active);
+    }
+  }
+}
+
+.address {
+  font-style: normal;
+}
+
+.mail,
+.phone-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: #757575;
+  fill: #757575;
+  margin-right: 30px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: getColor(active);
+    fill: getColor(active);
+  }
+}

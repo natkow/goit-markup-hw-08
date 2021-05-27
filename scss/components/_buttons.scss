@@ -1,0 +1,26 @@
+@import '../utils/variables';
+
+%button {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 0 auto;
+    
+}
+
+.main__button{
+   @extend %button;
+   background-color: getColor(active);
+   color: getColor(font-light); 
+   justify-content: center;
+   letter-spacing: 0.06em;
+   margin-bottom: 106px;
+   
+}

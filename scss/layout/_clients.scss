@@ -1,0 +1,50 @@
+@import '../utils/variables';
+
+.clients {
+  background-color: getColor(main-background);
+}
+
+.our-clients-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor(font-dark);
+  padding-bottom: 50px;
+}
+
+.our-clients {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+
+  &__item{
+      width: 170px;
+      height: 92px;
+      margin: 0 15px;
+      border: 1px solid #afb1b8;
+  }
+
+  &__link {
+  justify-content: center;
+  display: flex;
+  fill: getColor(client-color);
+  
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: getColor(active);
+    border: 1px solid getColor(active)
+   }
+  }
+
+  &__img{
+    width: 106px;
+    height: 60.04px;
+  }
+}

@@ -1,0 +1,57 @@
+@import '../utils/variables';
+
+.our {
+  background-color: getColor(button-background);
+}
+
+.our-team-tittle{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.our-team {
+  display: flex;
+  
+  
+  &__item{
+    box-shadow: getColor(box-shadow1);
+    box-shadow: getColor(box-shadow2);
+    width: 270px;
+  }
+
+  &_img--margin-right{
+    margin-right:30px;
+        
+  }
+
+    // &--margin-right{
+    //   margin-right: 30px;
+    // }
+  
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 30px;
+  background-color: getColor(font-light);
+}
+
+.team-function {
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor(font-grey);
+  padding-top: 10px;
+  background-color: getColor(font-light);
+  padding-bottom: 30px;
+}
+

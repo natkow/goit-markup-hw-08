@@ -1,0 +1,41 @@
+@import '../utils/variables';
+
+.address {
+  font-style: normal;
+  
+  &--colors{
+    color: getColor(font-light); 
+  }
+
+  &--margin-left{
+    margin-left: 15px;
+  }
+}
+
+.mail,
+.phone-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  margin-right: 30px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top:9px;
+
+  &--color-footer{
+    color: getColor(font-footer);  
+  }
+
+  &--color-header{
+    color: getColor(font-grey);  
+    fill: getColor(font-grey);
+  }
+
+  &:hover,
+  &:focus {
+    color: getColor(active);
+    fill: getColor(active);
+  }
+}
+
+

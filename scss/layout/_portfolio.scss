@@ -1,0 +1,98 @@
+@import '../utils/variables';
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+  margin-left: 15px;
+  margin-top: 15px;
+  }
+}
+
+// OBRAZKI
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: -15px;
+
+  &__item {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: getColor(font-grey);
+  margin: 15px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &focus{
+      box-shadow: getColor(box-shadow-port1);
+      box-shadow: getColor(box-shadow-port2);
+      box-sizing: border-box;
+      box-shadow: 0px 1px 1px getColor(box-shadow-port3), 0px 4px 4px getColor(box-shadow-port2),
+    1px 4px 6px getColor(box-shadow-port1);  
+    }
+  }
+}
+
+.box-overlay {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.box-overlay:hover .overlay {
+  transform: translatex(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: getColor(overlay-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: getColor(font-dark);
+  font-size: 18px;
+  line-height: 1.556;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  color: getColor(font-light);
+  padding-left: 24px;
+  padding-right: 45px;
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.descr-images {
+  background: getColor(main-background);
+  border: 1px solid getColor(border-color);
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-bottom: 20px;
+
+  &_tittle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 20px;
+  }
+
+  &_text {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: getColor(font-grey);
+  margin-top: 4px;
+  }
+}
+
+
+

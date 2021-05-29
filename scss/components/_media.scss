@@ -7,6 +7,11 @@
   justify-content: center;
   color: getColor(media-background);
 
+  &--dark{
+    background-color: getColor(dark-background);
+    margin-left: -620px;
+  }
+
     &__link{
         width: 44px;
         height: 44px;
@@ -18,7 +23,12 @@
             
         &--color-light{
           background-color: getColor(main-background);
-          fill: getColor(media-color);
+          fill: getColor(media-color-dark);
+        }
+        &--color-dark{
+          background-color: getColor(media-dark);
+          fill: getColor(media-color-light);
+          margin-right: 10px;
         }
 
         &:hover,

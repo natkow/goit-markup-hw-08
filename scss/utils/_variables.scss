@@ -1,46 +1,49 @@
-$colors:(
-    main-background: #FFF,
-    dark-background: #2F303A,
-    button-background:#F5F4FA,
-    text-background: rgba(47, 48, 58, 0.8),
-
-    box-shadow1: rgba(0, 0, 0, 0.2),
-    box-shadow2: rgba(0, 0, 0, 0.14),
-
-    media-background: rgba(255, 255, 255, 1),
-
-    media-color: rgba(175, 177, 184, 1),
-
-    client-color: rgba(175, 177, 184, 1),
-
-    // second-dark-transparent-bg:rgba(255, 255, 255, 0.1),
-    // second-backdrop-transparent-bg:rgba(0, 0, 0, 0.2),
-    // second-box-transiton: rgba(33, 150, 243, 0.9),
-    // second-light-bg: #F5F4FA,
-    
-
-    font-dark: #212121,
-    font-grey:#757575,
-    font-light: #FFF,
-    // font-light-transparent: #ffffff99,
-
-    active: #2196F3,
-    svg-grey: #AFB1B8,
-
-    // under-line:#ECECEC,
-
-    // border-light:#EEEEEE
+$colors: (
+  main-background: #fff,
+  dark-background: #2f303a,
+  button-background: #f5f4fa,
+  text-background: rgba(47, 48, 58, 0.8),
+  box-shadow1: rgba(0, 0, 0, 0.2),
+  box-shadow2: rgba(0, 0, 0, 0.14),
+  media-background: rgba(255, 255, 255, 1),
+  media-color-dark: rgba(175, 177, 184, 1),
+  media-color-light: #fff,
+  client-color: rgba(175, 177, 184, 1),
+  media-dark: rgba(117, 117, 117, 1),
+  box-shadow-port1: rgba(0, 0, 0, 0.16),
+  box-shadow-port2: rgba(0, 0, 0, 0.06),
+  box-shadow-port3: rgba(0, 0, 0, 0.12),
+  box-shadow-port4: rgba(0, 0, 0, 0.14),
+  overlay-background: rgba(33, 150, 243, 0.9),
+  font-dark: #212121,
+  font-grey: #757575,
+  font-light: #fff,
+  font-footer: rgba(255, 255, 255, 0.6),
+  active: #2196f3,
+  client-border: #afb1b8,
+  client-active: rgba(33, 150, 243, 1),
+  border-color: #eee,
+  border-modal: rgba(0, 0, 0, 0.1),
+  border-input: rgba(33, 33, 33, 0.2),
+  text-area: rgba(117, 117, 117, 0.5),
+  outline: #000,
 );
 
-@function getColor($name){
-    @return map-get($colors, $name);
+@function getColor($name) {
+  @return map-get($colors, $name);
 }
 
-$fonts:(
-    'main-font': ('Roboto', sans-serif),
-    'secondary-font': ('Raleway', sans-serif),
+$fonts: (
+  'main-font': (
+    'Roboto',
+    sans-serif,
+  ),
+  'secondary-font': (
+    'Raleway',
+    sans-serif,
+  ),
 );
 
-@function getFont($font){
-    @return map-get($fonts, $font);
+@function getFont($font) {
+  @return map-get($fonts, $font);
 }

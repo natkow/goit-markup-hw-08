@@ -14,5 +14,10 @@
       color: getColor(active);
       margin-left: 0;
   }
+
+  &__second{
+    color: getColor(font-light);
+    margin-left: 0;
+  }
 }
 

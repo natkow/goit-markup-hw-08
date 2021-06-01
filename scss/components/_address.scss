@@ -1,14 +1,24 @@
 @import '../utils/variables';
 
-.address {
-  font-style: normal;
-  
-  &--colors{
-    color: getColor(font-light); 
+@media screen and (min-width: 480px) {
+  .address {
+    display: none;
   }
+}
 
-  &--margin-left{
-    margin-left: 15px;
+@media screen and (min-width: 768px) {
+  .address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    margin-right: 50px;
+    &--colors {
+      color: getColor(font-light);
+    }
+
+    &--margin-left {
+      margin-left: 15px;
+    }
   }
 }
 
@@ -23,11 +33,11 @@
   margin-top:9px;
 
   &--color-footer{
-    color: getColor(font-footer);  
+    color: getColor(font-footer);
   }
 
   &--color-header{
-    color: getColor(font-grey);  
+    color: getColor(font-grey);
     fill: getColor(font-grey);
   }
 
@@ -38,4 +48,10 @@
   }
 }
 
-
+@media screen and (min-width: 1200px) {
+  .address {
+    &--row{
+      flex-direction: row;
+    }
+  }
+}

@@ -1,57 +1,78 @@
 @import '../utils/variables';
 
-.our {
-  background-color: getColor(button-background);
-}
-
-.our-team-tittle{
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
-.our-team {
-  display: flex;
-  
-  
-  &__item{
-    box-shadow: getColor(box-shadow1);
-    box-shadow: getColor(box-shadow2);
-    width: 270px;
+@media screen and (min-width: 480px) {
+  .our {
+    background-color: getColor(button-background);
   }
 
-  &_img--margin-right{
-    margin-right:30px;
-        
+  .our-team {
+    &__item {
+      box-shadow: getColor(box-shadow1);
+      box-shadow: getColor(box-shadow2);
+      width: 450px;
+    }
   }
 
-    // &--margin-right{
-    //   margin-right: 30px;
-    // }
-  
+  .our-team-tittle {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+
+  .team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+    background-color: getColor(font-light);
+  }
+
+  .team-function {
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: getColor(font-grey);
+    padding-top: 10px;
+    background-color: getColor(font-light);
+    padding-bottom: 30px;
+  }
 }
 
-.team-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.188;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-top: 30px;
-  background-color: getColor(font-light);
-}
+@media screen and (min-width: 768px) {
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
 
-.team-function {
-  font-size: 16px;
-  line-height: 1.188;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: getColor(font-grey);
-  padding-top: 10px;
-  background-color: getColor(font-light);
-  padding-bottom: 30px;
-}
+    &__item {
+      box-shadow: getColor(box-shadow1);
+      box-shadow: getColor(box-shadow2);
+      width: 354px;
+    }
+  }
 
+  @media screen and (min-width: 1200px) {
+    .our-team-tittle {
+      font-size: 36px;
+      line-height: 1.167;
+      margin-bottom: 50px;
+    }
+  }
+
+  .our-team {
+    &__item {
+      box-shadow: getColor(box-shadow1);
+      box-shadow: getColor(box-shadow2);
+      width: 270px;
+    }
+
+    &_img--margin-right {
+      margin-right: 30px;
+    }
+  }
+}

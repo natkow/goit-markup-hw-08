@@ -1,28 +1,73 @@
-.main{
-    background-color: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 1600px;
+@import '../utils/variables';
 
-  &__tittle {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  width: 696px;
-  margin: 0 auto;
-  margin-top: 102.667px;
-  margin-bottom: 30px;
- }
+@media screen and (min-width: 480px) {
+  .main {
+    background-color: getColor(dark-background);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 480px;
+    margin-bottom: -94px;
+
+    &__tittle {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: getColor(font-light);
+      width: 365px;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .main {
+    background-color: getColor(dark-background);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 768px;
+    margin-bottom: -94px;
+  }
+}
 
+@media screen and (min-width: 1200px) {
+  .main {
+    background-color: getColor(dark-background);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
 
+    &__tittle {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.364;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: getColor(font-light);
+      width: 696px;
+      margin: 0 auto;
+      margin-top: 102.667px;
+      margin-bottom: 30px;
+    }
+  }
+}

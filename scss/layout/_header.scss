@@ -1,5 +1,76 @@
 @import '../utils/variables';
 
+@media screen and (min-width: 480px) {
+  .navigation-list {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: relative;
+
+    &__img {
+      position: absolute;
+      left: 180px;
+
+      &:hover,
+      &:focus {
+        fill: getColor(active);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: center;
+    width: 307px;
+    position: relative;
+    &__item {
+      display: block;
+      padding-right: 46px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.142;
+      letter-spacing: 0.02em;
+
+      &--underline::after {
+        content: '';
+        position: absolute;
+        width: 53px;
+        height: 4px;
+        top: 52px;
+        background: #2196f3;
+        border-radius: 2px;
+        transform: translateX(-55px);
+      }
+    }
+
+    &--color {
+      color: getColor(font-dark);
+    }
+
+    &__link {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: getColor(active);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-list {
+    margin-right: 200px;
+  }
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -10,44 +81,3 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-
-.navigation-list {
-  display: flex;
-  align-items: center;
-  margin-right: 164px;
-  width: 307px;
-  position: relative;
-  &__item {
-    display: block;
-    padding-right: 46px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-
-    &--underline::after {
-      content: '';
-      position: absolute;
-      width: 53px;
-      height: 4px;
-      top: 52px;
-      background: #2196f3;
-      border-radius: 2px;
-      transform: translateX(-55px);
-    }
-  }
-
-  &--color {
-    color: getColor(font-dark);
-  }
-
-  &__link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      color: getColor(active);
-    }
-  }
-}
-

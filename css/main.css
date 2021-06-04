@@ -109,7 +109,7 @@ img {
   .logo--position {
     justify-content: left;
     display: flex;
-    margin-left: 115px;
+    margin-left: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -217,7 +217,6 @@ img {
 }
 .address {
   font-style: normal;
-  margin-right: 0px;
   display: flex;
   margin-top: 20px;
 }
@@ -276,6 +275,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .address {
+    text-align: c;
+  }
   .address--hidden {
     display: none;
   }
@@ -358,19 +360,11 @@ img {
 
 .mobile-menu {
   display: block;
-  position: relative;
-}
-.mobile-menu__img {
-  position: absolute;
-  right: 15px;
+  justify-content: flex-end;
+  margin-right: 15px;
 }
 .mobile-menu__img:hover, .mobile-menu__img:focus {
   fill: #2196f3;
-}
-.mobile-menu__img {
-  justify-content: right;
-  left: 180px;
-  position: absolute;
 }
 
 .header .container {
@@ -436,7 +430,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .navigation-list {
-    margin-right: 230px;
+    margin-right: 100px;
     margin-left: 140px;
   }
 
@@ -532,8 +526,6 @@ img {
   text-align: center;
   display: block;
   width: 450px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 .description__text {
@@ -612,8 +604,6 @@ img {
 
 .about-us {
   display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 .about-us__item {
   position: relative;

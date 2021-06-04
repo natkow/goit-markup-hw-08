@@ -20,64 +20,55 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
+// .header .container {
+//   display: flex;
+//   align-items: center;
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+// }
 
-  .navigation-list {
-    display: flex;
-    align-items: center;
-    width: 307px;
-    position: relative;
-    &__item {
-      display: block;
-      padding-right: 46px;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.142;
-      letter-spacing: 0.02em;
+// .header {
+//   border-bottom: 1px solid #ececec;
+//   width:1200px;
+// }
 
-      &--underline::after {
-        content: '';
-        position: absolute;
-        width: 53px;
-        height: 4px;
-        top: 52px;
-        background: #2196f3;
-        border-radius: 2px;
-        transform: translateX(-55px);
-      }
-    }
+// .navigation-list {
+//   display: flex;
+//   align-items: center;
+//   margin-right: 270px;
+//   width: 307px;
+//   position: relative;
+//   margin-left: 93px;
+//   &__item {
+//     display: block;
+//     padding-right: 46px;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.142;
+//     letter-spacing: 0.02em;
 
-    &--color {
-      color: getColor(font-dark);
-    }
+//     &--underline::after {
+//       content: '';
+//       position: absolute;
+//       width: 53px;
+//       height: 4px;
+//       top: 44px;
+//       background: getColor(active);
+//       border-radius: 2px;
+//       transform: translateX(-55px);
+//     }
+//   }
 
-    &__link {
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &--color {
+//     color: getColor(font-dark);
+//   }
 
-      &:hover,
-      &:focus {
-        color: getColor(active);
-      }
-    }
-  }
-}
+//   &__link {
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-@media screen and (min-width: 1200px) {
-  .navigation-list {
-    margin-right: 200px;
-  }
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
-}
+//     &:hover,
+//     &:focus {
+//       color: getColor(active);
+//     }
+//   }
+// }

@@ -6,10 +6,11 @@
   padding-bottom: 30px;
   justify-content: center;
   color: getColor(media-background);
+  width:270px;
 
   &--dark{
     background-color: getColor(dark-background);
-    margin-left: -620px;
+    margin-left: -30px;
   }
 
     &__link{

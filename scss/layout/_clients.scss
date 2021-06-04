@@ -1,5 +1,7 @@
+@import '../utils/variables';
+
 .client {
-  background-color: #fff;
+  background-color: getColor(main-background);
 }
 
 .client-tittle {
@@ -9,18 +11,20 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: getColor(font-dark);
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .our-clients {
   display: flex;
+  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: center;
 
   &__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
-    margin: 0 15px;
+    margin: 0 15px 30px 15px;
   }
 
   &__link {
@@ -29,29 +33,45 @@
     display: flex;
     padding-top: 16px;
     padding-bottom: 16px;
-    fill: rgba(175, 177, 184, 1);
+    fill: getColor(client-color);
     border: 1px solid getColor(client-border);
     box-sizing: border-box;
     border-radius: 4px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus{
-        fill: getColor(client-active);
-        border: 1px solid getColor(active);
-      }
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: getColor(client-active);
+      border: 1px solid getColor(active);
+    }
   }
 
   &__image {
-  width: 106px;
-  height: 60.04px;
+    width: 106px;
+    height: 60.04px;
   }
-
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .our-clients {
+    &__item {
+      width: 226px;
+    }
+  }
+}
 
+@media screen and (min-width: 1200px) {
+  .client-tittle {
+    padding-bottom: 50px;
+  }
 
+  .our-clients {
+    flex-wrap: nowrap;
+    flex-direction: row;
 
-
-
-
+    &__item {
+      width: 170px;
+      margin: 0 15px;
+    }
+  }
+}

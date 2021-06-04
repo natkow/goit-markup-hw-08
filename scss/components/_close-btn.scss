@@ -1,0 +1,30 @@
+@import '../utils/variables';
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: getColor(main-background);
+  border: 0;
+  cursor: pointer;
+
+  &--border {
+    border-radius: 50%;
+    border: 1px solid getColor(border-modal);
+    width: 30px;
+    height: 30px;
+  }
+
+  .close-btn {
+    &:hover,
+    &:focus {
+      fill: getColor(active);
+    }
+  }
+}
+
+.close-icon {
+  width: 11px;
+  height: 11px;
+}
+

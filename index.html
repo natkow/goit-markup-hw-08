@@ -11,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <title>Studio</title>
-    
+    <title>Studio</title>    
 </head>
+
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container container--space-between">
             <a class="logo link" href="./index.html">
-                <span class="logo__first logo--margin-left">Web</span>Studio</a>
+                <span class="logo__first">Web</span>Studio</a>
             <nav class="nawigation">
                 <ul class="navigation-list list">
                     <!-- Nawigacja do innych stron -->
@@ -30,24 +30,23 @@
                     <li class="navigation-list__item"><a class="navigation-list__link navigation-list--color link" href="#">Kontakt</a></li>
                 </ul>
             </nav>
-
-            <div class="mobile-menu">
+            <div class="mobile-menu" data-mobile-menu-open>
                 <a href="#">
                     <svg class="mobile-menu__img" width="16" height="12">
                         <use href="./images/icons.svg#icon-menu_24px"></use>
                     </svg>
                 </a>
-            </div>
-           
-            <ul class="address list">
+            </div>            
+
+            <ul class="address address--row address--hidden address--position list">
                 <li class="address__item">
-                <a class="mail mail--color-header link" href="mailto:info@devstudio.com">
-                    <svg class="logo-icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a>
+                    <a class="mail mail--color-header link" href="mailto:info@devstudio.com">
+                        <svg class="logo-icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
                 </li>
-                <li class="address__item">
+                <li class="address__item ">
                     <a class="phone-number phone-number--color-header phone-number--margin-left link" href="tel:+48111111111">
                         <svg class="logo-icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
@@ -58,72 +57,60 @@
         </div>
     </header>
 
-    <!-- <main>
+    <main>
         <section class="main section container">
             <div class="container">
                 <h1 class="main__tittle">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
                 <button type="Button" class="main__button" data-modal-open>"Zamów usługę"</button>
             </div>
         </section>
-        
-       
-    <!--Hero-->
-       <!-- <section class=" section container">
-        <div class="container">
-            <ul class="image list">
-                <li class="image__item">
-                    <svg class="image__icon" >
-                    <use href="./images/icons.svg#icon-antenna"></use></svg>
-                </li>
-                <li class="image__item">
-                    <svg class="image__icon">
-                        <use href="./images/icons.svg#icon-clock"></use>
-                    </svg>
-                </li>
-                <li class="image__item">
-                    <svg class="image__icon">
-                        <use href="./images/icons.svg#icon-diagram"></use>
-                    </svg>
-                </li>
-                <li class="image__item">
-                    <svg class="image__icon">
-                        <use href="./images/icons.svg#icon-astronaut"></use>
-                    </svg>
-                </li>
-            </ul> -->
 
-            <!-- <ul class="description list">
-                <li class="description__item">
-                    <p class="description__tittle">LOREM IPSUM</p>
-                    <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                        sodales dui. Interdum et malesuada
-                    </p>
-                </li>
-                <li class="description__item">
-                    <p class="description__tittle">LOREM IPSUM</p>
-                    <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                        sodales dui. Interdum et malesuada
-                    </p>
-                </li>
-                <li class="description__item">
-                    <p class="description__tittle">LOREM IPSUM</p>
-                    <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                        sodales dui. Interdum et malesuada
-                    </p>
-                </li>
-                <li class="description__item">
-                    <p class="description__tittle">LOREM IPSUM</p>
-                    <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                        sodales dui. Interdum et malesuada
-                    </p>
-                </li>
-            </ul>
-        </div>
-        
-    </section> -->
-
-    <!-- Czym się zajmujemy?
-    <section class="section container">
+        <!--Hero-->
+        <section class=" section container">
+                <div class="container">
+                    <ul class="description list">
+                        <li class="description__item ">
+                            <svg class="description__icon">
+                                <use href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                            <p class="description__tittle">LOREM IPSUM</p>
+                            <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                                sodales dui. Interdum et malesuada
+                            </p>
+                        </li>
+                        <li class="description__item">
+                            <svg class="description__icon">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                            <p class="description__tittle">LOREM IPSUM</p>
+                            <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                                sodales dui. Interdum et malesuada
+                            </p>
+                        </li>
+                        <li class="description__item">
+                            <svg class="description__icon">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                            <p class="description__tittle">LOREM IPSUM</p>
+                            <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                                sodales dui. Interdum et malesuada
+                            </p>
+                        </li>
+                        <li class="description__item">
+                            <svg class="description__icon">
+                                <use href="./images/icons.svg#icon-astronaut"></use>
+                            </svg>
+                            <p class="description__tittle">LOREM IPSUM</p>
+                            <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                                sodales dui. Interdum et malesuada
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+     
+    <!--Czym się zajmujemy?-->
+    <section class="about-us-section section container">
         <div class="container">
             <h2 class="about-us-tittle">Czym się zajmujemy?</h2>
             <ul class="about-us list">
@@ -143,18 +130,23 @@
             </ul>
         </div>
         
-    </section> -->
+    </section>
 
-    <!--Nasz zespół-->
-    <!-- <section class="our section">
+    <!-- Nasz zespół-->
+    <section class="our section">
         <div class="container">
             <h2 class="our-team-tittle">Nasz zespół</h2>
             <ul class="our-team list">
                 <li class="our-team_item our-team_item--margin-right">
-                    <img class="our-team_img--margin-right" src="./images/index/john_doe(4).jpg" alt="Product Designer" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/pc/img1.jpg 1x, ./images/team/pc/img1@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/tablet/img1.jpg 1x, ./images/team/tablet/img1@2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="./images/team/mobile/img1.jpg"
+                            srcset="./images/team/mobile/img1.jpg 1x, ./images/team/mobile/img1@2x.jpg 2x" alt="Photo: John Doe">
+                    </picture>
                     <h3 class="team-name">John Doe</h3>
-                    <p class="team-function">Product Designer</p>
-                    <ul class="media list">
+                    <span class="team-function">Product Designer</span>
+                    <ul class="media media--margin-bottom list">
                         <li class="media__item">
                             <a class="media__link media__link--color-light link" href="#">
                                 <svg class="media-icon">
@@ -178,10 +170,15 @@
                 </li>                 
             
                 <li class="our-team_item">
-                    <img class="our-team_img--margin-right" src="./images/index/john_doe(2).jpg" alt="Frontend Developer" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/pc/img2.jpg 1x, ./images/team/pc/img2@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/tablet/img2.jpg 1x, ./images/team/tablet/img2@2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="./images/team/mobile/img2.jpg"
+                            srcset="./images/team/mobile/img2.jpg 1x, ./images/team/mobile/img2@2x.jpg 2x" alt="Photo: John Doe">
+                    </picture>
                     <h3 class="team-name">John Doe</h3>
-                    <p class="team-function">Frontend Developer</p>
-                    <ul class="media list">
+                    <span class="team-function">Frontend Developer</span>
+                    <ul class="media media--margin-bottom list">
                         <li class="media__item">
                             <a class="media__link media__link--color-light link" href="#">
                                 <svg class="media-icon">
@@ -208,10 +205,15 @@
                     </ul>
                 </li>
                 <li class="our-team_item">
-                    <img class="our-team_img--margin-right" src="./images/index/john_doe(3).jpg" alt="Marketing" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/pc/img3.jpg 1x, ./images/team/pc/img3@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/tablet/img3.jpg 1x, ./images/team/tablet/img3@2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="./images/team/mobile/img3.jpg"
+                            srcset="./images/team/mobile/img3.jpg 1x, ./images/team/mobile/img3@2x.jpg 2x" alt="Photo: John Doe">
+                    </picture>
                     <h3 class="team-name">John Doe</h3>
-                    <p class="team-function">Marketing</p>
-                    <ul class="media list">
+                    <span class="team-function">Marketing</span>
+                    <ul class="media media--margin-bottom list">
                         <li class="media__item">
                             <a class="media__link media__link--color-light link" href="#">
                                 <svg class="media-icon">
@@ -237,9 +239,15 @@
                         </li>
                     </ul>
                 </li>
-                <li class="our-team_item"><img src="./images/index/john_doe(1).jpg" alt="UI Designer" width="270" height="260">
+                <li class="our-team_item">
+                    <picture>
+                        <source srcset="./images/team/pc/img4.jpg 1x, ./images/team/pc/img4@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/tablet/img4.jpg 1x, ./images/team/tablet/img4@2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="./images/team/mobile/img4.jpg"
+                            srcset="./images/team/mobile/img4.jpg 1x, ./images/team/mobile/img4@2x.jpg 2x" alt="Photo: John Doe">
+                    </picture>
                     <h3 class="team-name">John Doe</h3>
-                    <p class="team-function">UI Designer</p>
+                    <span class="team-function">UI Designer</span>
                     <ul class="media list">
                         <li class="media__item">
                             <a class="media__link media__link--color-light link" href="#">
@@ -269,12 +277,12 @@
             </ul>
         </div>
         
-    </section> -->
+    </section>
     </main>
 
 
     <!--Nasi klienci-->
-    <!-- <section class="client section container">
+    <section class="client section container">
         <div class="container">
             <h2 class="client-tittle">Nasi klienci</h2>
             <ul class="our-clients list">
@@ -317,17 +325,17 @@
             </ul>
     
         </div>
-    </section> -->
+    </section>
 
 
-    <!-- <footer class="footer">
+    <footer class="footer">
             <div class="container">
                 <div class="footer--column">
-                    <a class="logo link" href="./index.html">
+                    <a class="logo logo--position link" href="./index.html">
                         <span class="logo__first">Web</span><span class="logo__second">Studio</span></a>
-                    <address class="address address--margin-left address--colors address--flex">m. Warszawa, Aleje Jerozolimskie 21
-                        <p><a class="mail  mail--color-footer link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-                        <p><a class="phone-number phone-number--color-footer link" href="tel:+48111111111">+48 111 111 111</a></p>
+                    <address class="address address--position address--colors address--column">m. Warszawa, Aleje Jerozolimskie 21
+                        <p><a class="mail  mail--color-footer mail--position link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+                        <p><a class="phone-number phone-number--color-footer phone-number--position link" href="tel:+48111111111">+48 111 111 111</a></p>
                     </address>
                 </div>
                     <div class="join">DOŁĄCZ DO NAS
@@ -372,11 +380,11 @@
 
                 </div>
             </div>                    
-    </footer> -->
+    </footer>
     
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
+        <button type="button" class="close-btn  close-btn--border" data-modal-close>
             <svg class="close-icon" width="11" height="11">
                 <use href="./images/modal/close.svg#icon-Vector">
                 </use>
@@ -424,7 +432,58 @@
         </form>
     </div>
 </div>
-<script src="./js/modal.js"></script> --> -->
+<script src="./js/modal.js"></script>
+
+<div class="backdrop is-hidden" data-mobile-menu>
+    <div class="menu-external">
+        <button type="button" class="close-btn" data-mobile-menu-close>
+            <svg class="close-icon" width="11" height="11">
+                <use href="./images/modal/close.svg#icon-Vector">
+                </use>
+            </svg>
+        </button> 
+        
+        <ul class="mobile-navigation list">
+            <!-- Nawigacja do innych stron -->
+            <li class="mobile-navigation__item">
+                <a class="mobile-navigation__link navigation-list--color link" href="#">Agencja</a>
+            </li>
+            <li class="mobile-navigation__item">
+                <a class="mobile-navigation__link navigation-list--color link"
+                    href="./portfolio.html">Portfolio</a></li>
+            <li class="mobile-navigation__item">
+                <a class="mobile-navigation__link navigation-list--color link" href="#">Kontakt</a>
+            </li>
+        </ul>
+
+        <ul class="address address--column list">
+            <li>
+                <a class="phone-number phone-number--style-mobile link " href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+            <li>
+                <a class="mail mail--style-mobile link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        
+        <ul class="media-mobile list">
+            <li class="media-mobile__item">
+            <a href="#" class="media-mobile__link link"> Instagram</a>
+            </li>
+            <li class="media-mobile__item media-mobile__item--vertical-line">
+                <a href="#" class="media-mobile__link link">Twitter</a>
+            </li>
+            <li class="media-mobile__item media-mobile__item--vertical-line">
+                <a href="#" class="media-mobile__link link">Facebook</a>
+            </li>
+            <li class="media-mobile__item media-mobile__item--vertical-line">
+                <a href="#" class="media-mobile__link link">Linkedin</a>
+            </li>
+        </ul>
+        
+            
+    </div>
+</div>
+<script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>

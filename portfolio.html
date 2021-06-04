@@ -15,9 +15,9 @@
 </head>
 <body>
 <header class="header">
-    <div class="container">
+    <div class="container container--space-between">
         <a class="logo link" href="./index.html">
-            <span class="logo__first logo--margin-left">Web</span>Studio</a>
+            <span class="logo__first">Web</span>Studio</a>
         <nav class="nawigation">
             <ul class="navigation-list list">
                 <!-- Nawigacja do innych stron -->
@@ -30,8 +30,15 @@
                         href="#">Kontakt</a></li>
             </ul>
         </nav>
+        <div class="mobile-menu" data-mobile-menu-open>
+            <a href="#">
+                <svg class="mobile-menu__img" width="16" height="12">
+                    <use href="./images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </a>
+        </div>
 
-        <ul class="address list">
+        <ul class="address address--row address--hidden list">
             <li class="address__item">
                 <a class="mail mail--color-header link" href="mailto:info@devstudio.com">
                     <svg class="logo-icon" width="16" height="12">
@@ -56,11 +63,11 @@
             <div class="container">
                 <ul class="menu-btn list">
                     <li class="menu-btn__item link">
-                        <button type="button" class="menu-btn__button"> Wszystkie </button></li>
-                    <li class="menu-btn__item"><button type="button" class="menu-btn__button"> Strony </button></li>
+                        <button type="button" class="menu-btn__button menu-btn--size1"> Wszystkie </button></li>
+                    <li class="menu-btn__item"><button type="button" class="menu-btn__button menu-btn--size2"> Strony </button></li>
                     <li class="menu-btn__item"><button type="button" class="menu-btn__button"> Aplikacje </button></li>
-                    <li class="menu-btn__item"><button type="button" class="menu-btn__button"> Dizajn </button></li>
-                    <li class="menu-btn__item"><button type="button" class="menu-btn__button"> Marketing </button></li>
+                    <li class="menu-btn__item"><button type="button" class="menu-btn__button menu-btn--size1"> Dizajn </button></li>
+                    <li class="menu-btn__item"><button type="button" class="menu-btn__button menu-btn--size2"> Marketing </button></li>
                 </ul>
 
                 <!--OBRAZKI -->
@@ -68,8 +75,14 @@
                 <ul class="images list">
                     <li class="images__item">
                         <div class="box-overlay">
-                            <img class="box-overlay_image" src="./images/portfolio/web_page.jpg" alt="Technocrack" width="370"
-                                height="294">
+                            <picture>
+                                <source srcset="./images/portfolio/pc/img1.jpg 1x, ./images/portfolio/pc/img1@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/tablet/img1.jpg 1x, ./images/portfolio/mobile/img1@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img src="./images/portfolio/mobile/img1.jpg"
+                                    srcset="./images/portfolio/mobile/img1.jpg 1x, ./images/portfolio/mobile/img1@2x.jpg 2x" alt="Photo: John Doe">
+                            </picture>
                             <div class="overlay">
                                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa.
                                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -85,8 +98,14 @@
                     </li>
                     <li class="images__item">
                         <div class="box-overlay">
-                            <img class="box-overlay_image" src="./images/portfolio/basketball.jpg"
-                                alt="Grafika New Orlean vs Golden Star" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/portfolio/pc/img2.jpg 1x, ./images/portfolio/pc/img2@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/tablet/img2.jpg 1x, ./images/portfolio/mobile/img2@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img src="./images/portfolio/mobile/img2.jpg"
+                                    srcset="./images/portfolio/mobile/img2.jpg 1x, ./images/portfolio/mobile/img2@2x.jpg 2x" alt="Photo: John Doe">
+                            </picture>
                             <div class="overlay">
                                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa.
                                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -101,8 +120,14 @@
                     </li>
                     <li class="images__item">
                         <div class="box-overlay">
-                            <img class="box-overlay_image" src="./images/portfolio/seafood.jpg" alt="Restauracja Seafood" width="370"
-                                height="294">
+                            <picture>
+                                <source srcset="./images/portfolio/pc/img3.jpg 1x, ./images/portfolio/pc/img3@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/tablet/img3.jpg 1x, ./images/portfolio/mobile/img3@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img src="./images/portfolio/mobile/img3.jpg"
+                                    srcset="./images/portfolio/mobile/img3.jpg 1x, ./images/portfolio/mobile/img3@2x.jpg 2x" alt="Photo: John Doe">
+                            </picture>
                             <div class="overlay">
                                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa.
                                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -117,8 +142,14 @@
                     </li>
                     <li class="images__item">
                         <div class="box-overlay">
-                            <img class="box-overlay_image" src="./images/portfolio/headphones.jpg" alt="Projekt Prime" width="370"
-                                height="294">
+                            <picture>
+                                <source srcset="./images/portfolio/pc/img4.jpg 1x, ./images/portfolio/pc/img4@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/tablet/img4.jpg 1x, ./images/portfolio/mobile/img4@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img src="./images/portfolio/mobile/img4.jpg"
+                                    srcset="./images/portfolio/mobile/img4.jpg 1x, ./images/portfolio/mobile/img4@2x.jpg 2x" alt="Photo: John Doe">
+                            </picture>
                             <div class="overlay">
                                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa.
                                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -133,8 +164,14 @@
                     </li>
                     <li class="images__item">
                         <div class="box-overlay">
-                            <img class="box-overlay_image" src="./images/portfolio/boxes.jpg" alt="Projekt Boxes" width="370"
-                                height="294">
+                            <picture>
+                                <source srcset="./images/portfolio/pc/img5.jpg 1x, ./images/portfolio/pc/img5@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/tablet/img5.jpg 1x, ./images/portfolio/mobile/img5@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img src="./images/portfolio/mobile/img5.jpg"
+                                    srcset="./images/portfolio/mobile/img5.jpg 1x, ./images/portfolio/mobile/img5@2x.jpg 2x" alt="Photo: John Doe">
+                            </picture>
                             <div class="overlay">
                                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa.
                                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -149,8 +186,14 @@
                     </li>
                     <li class="images__item">
                         <div class="box-overlay">
-                            <img class="box-overlay_image" src="./images/portfolio/monitor.jpg" alt="Inspiration has no Borders"
-                                width="370" height="294">
+                            <picture>
+                                <source srcset="./images/portfolio/pc/img6.jpg 1x, ./images/portfolio/pc/img2@6x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/tablet/img6.jpg 1x, ./images/portfolio/mobile/img6@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img src="./images/portfolio/mobile/img6.jpg"
+                                    srcset="./images/portfolio/mobile/img6.jpg 1x, ./images/portfolio/mobile/img6@2x.jpg 2x" alt="Photo: John Doe">
+                            </picture>
                             <div class="overlay">
                                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa.
                                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -165,8 +208,14 @@
                     </li>
                     <li class="images__item">
                         <div class="box-overlay">
-                            <img class="box-overlay_image" src="./images/portfolio/magazine.jpg" alt="Magazyn Limited Edition"
-                                width="370" height="294">
+                            <picture>
+                                <source srcset="./images/portfolio/pc/img7.jpg 1x, ./images/portfolio/pc/img7@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/tablet/img7.jpg 1x, ./images/portfolio/mobile/img7@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img src="./images/portfolio/mobile/img7.jpg"
+                                    srcset="./images/portfolio/mobile/img7.jpg 1x, ./images/portfolio/mobile/img7@2x.jpg 2x" alt="Photo: John Doe">
+                            </picture>
                             <div class="overlay">
                                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa.
                                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -181,8 +230,14 @@
                     </li>
                     <li class="images__item">
                         <div class="box-overlay">
-                            <img class="box-overlay_image" src="./images/portfolio/label_tag.jpg" alt="Projekt LAB" width="370"
-                                height="294">
+                            <picture>
+                                <source srcset="./images/portfolio/pc/img8.jpg 1x, ./images/portfolio/pc/img8@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/tablet/img8.jpg 1x, ./images/portfolio/mobile/img8@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img src="./images/portfolio/mobile/img8.jpg"
+                                    srcset="./images/portfolio/mobile/img8.jpg 1x, ./images/portfolio/mobile/img8@2x.jpg 2x" alt="Photo: John Doe">
+                            </picture>
                             <div class="overlay">
                                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa.
                                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -197,8 +252,14 @@
                     </li>
                     <li class="images__item">
                         <div class="box-overlay">
-                            <img class="box-overlay_image" src="./images/portfolio/computer.jpg" alt="Growing Business" width="370"
-                                height="294">
+                            <picture>
+                                <source srcset="./images/portfolio/pc/img9.jpg 1x, ./images/portfolio/pc/img9@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/tablet/img9.jpg 1x, ./images/portfolio/mobile/img9@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img src="./images/portfolio/mobile/img9.jpg"
+                                    srcset="./images/portfolio/mobile/img9.jpg 1x, ./images/portfolio/mobile/img9@2x.jpg 2x" alt="Photo: John Doe">
+                            </picture>
                             <div class="overlay">
                                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa.
                                 Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -221,8 +282,7 @@
             <div class="footer--column">
                 <a class="logo link" href="./index.html">
                     <span class="logo__first">Web</span><span class="logo__second">Studio</span></a>
-                <address class="address address--margin-left address--colors address--flex">m. Warszawa, Aleje Jerozolimskie
-                    21
+                <address class="address address--margin-left address--colors">m. Warszawa, Aleje Jerozolimskie 21
                     <p><a class="mail  mail--color-footer link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
                     <p><a class="phone-number phone-number--color-footer link" href="tel:+48111111111">+48 111 111 111</a>
                     </p>

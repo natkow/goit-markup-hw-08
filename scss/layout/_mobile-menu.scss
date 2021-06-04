@@ -1,0 +1,74 @@
+@import '../utils/variables';
+
+.menu-external {
+  box-sizing: border-box;
+  width: 480px;
+  height: 796px;
+  background-color: getColor(main-background);
+  position: absolute;
+  padding-left: 40px;
+}
+
+.close-btn {
+  &:hover,
+  &:focus {
+    fill: getColor(active);
+  }
+}
+
+.mobile-navigation {
+  margin-top: 48px;
+  margin-bottom: 302px;
+
+  &__item {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: getColor(font-dark);
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: getColor(font-dark);
+
+    &:hover,
+    &:focus {
+      color: getColor(active);
+    }
+  }
+}
+
+.media-mobile {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  margin-top: 64px;
+  margin-right: 83px;
+
+  &__item {
+    display: block;
+    padding-right: 20px;
+    position: relative;
+
+    &--vertical-line:not(:first-child)::before {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 0px;
+      left: -20px;
+      top: 10px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
+  }
+
+  &__link {
+    color: getColor(active);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+  }
+}

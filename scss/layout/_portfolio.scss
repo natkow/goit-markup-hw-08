@@ -2,11 +2,35 @@
 
 .menu-btn {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 
   &__item {
-  margin-left: 15px;
-  margin-top: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    width: 400px;
+    &--size1 {
+      width: 103px;
+    }
+
+    &--size2 {
+      width: 128px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 }
 
@@ -14,32 +38,29 @@
 .images {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 35px;
-  margin-right: -15px;
-  margin-left: -15px;
-  margin-bottom: -15px;
 
   &__item {
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: getColor(font-grey);
-  margin: 15px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: getColor(font-grey);
+    margin: 15px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
-    &focus{
+    &:focus {
       box-shadow: getColor(box-shadow-port1);
       box-shadow: getColor(box-shadow-port2);
       box-sizing: border-box;
-      box-shadow: 0px 1px 1px getColor(box-shadow-port3), 0px 4px 4px getColor(box-shadow-port2),
-    1px 4px 6px getColor(box-shadow-port1);  
+      box-shadow: 0px 1px 1px getColor(box-shadow-port3),
+        0px 4px 4px getColor(box-shadow-port2),
+        1px 4px 6px getColor(box-shadow-port1);
     }
   }
 }
 
 .box-overlay {
   position: relative;
-  width: 370px;
+  width: 450px;
   height: 294px;
   overflow: hidden;
 }
@@ -78,21 +99,30 @@
   padding-bottom: 20px;
 
   &_tittle {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 20px;
   }
 
   &_text {
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: getColor(font-grey);
-  margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: getColor(font-grey);
+    margin-top: 4px;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .box-overlay {
+    width: 354px;
+  }
+}
 
-
+@media screen and (min-width: 1200px)  {
+  .box-overlay {
+    width: 370px;
+  }
+}

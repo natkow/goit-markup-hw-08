@@ -1,10 +1,11 @@
 @import '../utils/variables';
 
 .our {
+  min-width: 100%;
   background-color: getColor(button-background);
 }
 
-.our-team-tittle{
+.our-team-tittle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -15,18 +16,22 @@
 
 .our-team {
   display: flex;
-  
-  
-  &__item{
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__item {
     margin: 0 15px;
-    box-shadow: getColor(box-shadow1);
-    box-shadow: getColor(box-shadow2);
-    width: 270px;
+    width: 450px;
+    height: 622px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
 
-  &_img--margin-right{
-    margin-right:30px;
-  }
+  // &_img--margin-right{
+  //   margin-right:30px;
+  // }
 }
 
 .team-name {
@@ -37,8 +42,7 @@
   letter-spacing: 0.03em;
   padding-top: 30px;
   background-color: getColor(font-light);
-  display: block;
-  width:270px;
+  width: 450px;
 }
 
 .team-function {
@@ -49,8 +53,42 @@
   color: getColor(font-grey);
   padding-top: 10px;
   background-color: getColor(font-light);
-  padding-bottom: 30px;
-  display: block;
-  width:270px;
+  padding-bottom: 16px;
+  display: inline-block;
+  width: 450px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .our-team {
+    justify-content: space-between;
+    margin: 0 15px;
+    
+    &__item {
+      
+      width: 354px;
+      height: 536px;
+    }
+
+    .team-name,
+    .team-function {
+      width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    &__item {
+      margin: 0 15px;
+      width: 270px;
+      height: 428px;
+    }
+
+    .team-name,
+    .team-function {
+      width: 270px;
+    }
+  }
+}

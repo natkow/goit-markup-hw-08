@@ -1,31 +1,45 @@
 @import '../utils/variables';
 
-@media screen and (min-width: 480px) {
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  font-family: getFont(secondary-font);
+  color: getColor(font-dark);
+  margin-left: 15px;
+
+  &--position {
+    justify-content: center;
+    display: flex;
+  }
+
+  &__first {
+    color: getColor(active);
+    margin-left: 0;
+  }
+
+  &__second {
+    color: getColor(font-light);
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .logo {
-    margin-left: 15px;
-    margin-top: 16px;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    font-family: getFont(secondary-font);
-    color: getColor(font-dark);
-
-    &__first {
-      color: getColor(active);
-    }
-
-    &__second {
-      color: getColor(font-light);
-      margin-left: 0;
+    &--position {
+      justify-content: left;
+      display: flex;
+      margin-left: 115px;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .logo {
-    &--margin-left {
-      margin-left: 60px;
+    &--position {
+      justify-content: left;
+      margin-left: 15px;
     }
   }
 }

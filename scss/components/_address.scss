@@ -2,7 +2,6 @@
 
 .address {
   font-style: normal;
-  
   display: flex;
   margin-top: 20px;
 
@@ -43,6 +42,12 @@
     color: getColor(active);
     fill: getColor(active);
   }
+
+  &--translate-y {
+    display: inline-block;
+
+    transform: translateY(-30px);
+  }
 }
 
 .mail {
@@ -69,7 +74,6 @@
 
 @media screen and (max-width: 768px) {
   .address {
-    text-align: c;
     &--hidden {
       display: none;
     }
@@ -88,8 +92,8 @@
   .address {
     display: flex;
     flex-direction: column;
-    &--margin-left{
-      margin-left:15px;
+    &--position {
+      margin-left: 55px;
     }
   }
 

@@ -7,13 +7,15 @@
   justify-content: center;
   color: getColor(media-background);
 
-  &--margin-bottom{
-      margin-bottom: 30px;
-    }
+  &--margin-bottom {
+    margin-bottom: 30px;
+  }
 
   &--dark {
     background-color: getColor(dark-background);
-    margin-left: -620px;
+    width: 206px;
+    margin-top: 20px;
+    justify-content: space-between;
   }
 
   &__link {
@@ -32,10 +34,7 @@
     &--color-dark {
       background-color: getColor(media-dark);
       fill: getColor(media-color-light);
-      margin-right: 10px;
     }
-
-    
 
     &:hover,
     &:focus {
@@ -52,6 +51,16 @@
 
 @media screen and (max-width: 768px) {
   .media {
-    width: 450px;
+    &--dark {
+      margin-left: 137px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .media {
+    &--dark {
+      margin-left: -40px;
+    }
   }
 }

@@ -18,9 +18,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: getColor(font-light);
-    width: 365px;
+    max-width: 100%;
     margin: 0 auto;
-    margin-top: 58px;
     margin-bottom: 30px;
   }
 }
@@ -34,7 +33,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-mobile@2x.jpg);
-      width: 480px;
+    width: 480px;
   }
 }
 
@@ -45,7 +44,11 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-tablet.jpg);
-      width: 768px;
+    width: 768px;
+
+    &__tittle {
+      width: 365px;
+    }
   }
 }
 
@@ -58,7 +61,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-tablet@2x.jpg);
-      width: 768px;
+    width: 768px;
   }
 }
 
@@ -69,6 +72,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-pc.jpg);
+    background-size: cover;
     width: 1600px;
     height: 600px;
 
@@ -76,7 +80,7 @@
       font-size: 44px;
       line-height: 1.364;
       width: 696px;
-      margin-top: 102.667px;
+      padding-top: 102.667px;
       margin-bottom: 30px;
     }
   }
@@ -91,7 +95,8 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-pc@2x.jpg);
-    width: 1600px;
-    
+
+    background-size: cover;
+    max-width: 1600px;
   }
 }

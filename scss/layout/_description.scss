@@ -12,13 +12,22 @@
     text-transform: uppercase;
   }
 
+  &__shape {
+    height: 120px;
+    background-color: getColor(button-background);
+    border-radius: 4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    justify-content: center;
+    display: flex;
+  }
+
   &__tittle {
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
     display: block;
-    width: 450px;
-    
     text-align: center;
   }
 
@@ -30,17 +39,12 @@
     color: getColor(font-grey);
     text-transform: none;
     margin-bottom: 30px;
-    display: block;
-    width: 450px;
+    max-width: 450px;
   }
 
   &__icon {
-    width: 450px;
-    height: 120px;
-    background-color: getColor(button-background);
-    border-radius: 4px;
-    padding: 25px 192px;
-    margin-bottom: 30px;
+    // height: 120px;
+    height: 70px;
   }
 }
 
@@ -48,8 +52,8 @@
   .description {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 15px;
+    margin-left: -15px;
+    margin-right: -15px;
 
     &__tittle {
       width: 354px;
@@ -59,10 +63,16 @@
       width: 354px;
     }
 
-    &__icon {
-      width: 354px;
-      padding: 25px 144px;
+    &__item {
       margin-bottom: 30px;
+    }
+
+    &__item:nth-child(2n-1) {
+      margin-right: 30px;
+    }
+
+    &__shape {
+      width: 354px;
     }
   }
 }
@@ -74,10 +84,8 @@
     justify-content: space-between;
     margin-top: 34px;
 
-    &__icon {
+    &__shape {
       width: 270px;
-      height: 120px;
-      padding: 25px 102px;
     }
 
     &__tittle {

@@ -16,20 +16,22 @@
 <body>
 <header class="header">
     <div class="container container--space-between">
-        <a class="logo link" href="./index.html">
+        <a class="logo logo--header-position link" href="./index.html">
             <span class="logo__first">Web</span>Studio</a>
         <nav class="nawigation">
             <ul class="navigation-list list">
                 <!-- Nawigacja do innych stron -->
-                <li class="navigation-list__item ">
+                <li class="navigation-list__item navigation-list__item--underline">
                     <a class="navigation-list__link navigation-list--color link" href="#">Agencja</a>
                 </li>
-                <li class="navigation-list__item navigation-list__item--underline"><a class="navigation-list__link navigation-list--color link"
+                <li class="navigation-list__item"><a class="navigation-list__link navigation-list--color link"
                         href="./portfolio.html">Portfolio</a></li>
                 <li class="navigation-list__item"><a class="navigation-list__link navigation-list--color link"
                         href="#">Kontakt</a></li>
             </ul>
         </nav>
+
+
         <div class="mobile-menu" data-mobile-menu-open>
             <a href="#">
                 <svg class="mobile-menu__img" width="16" height="12">
@@ -38,7 +40,7 @@
             </a>
         </div>
 
-        <ul class="address address--row address--hidden list">
+        <ul class="address address--row address--hidden address--header-position list">
             <li class="address__item">
                 <a class="mail mail--color-header link" href="mailto:info@devstudio.com">
                     <svg class="logo-icon" width="16" height="12">
@@ -46,7 +48,7 @@
                     </svg>
                     info@devstudio.com</a>
             </li>
-            <li class="address__item">
+            <li class="address__item ">
                 <a class="phone-number phone-number--color-header phone-number--margin-left link"
                     href="tel:+48111111111">
                     <svg class="logo-icon" width="10" height="16">
@@ -65,7 +67,7 @@
                     <li class="menu-btn__item link">
                         <button type="button" class="menu-btn__button menu-btn--size1"> Wszystkie </button></li>
                     <li class="menu-btn__item"><button type="button" class="menu-btn__button menu-btn--size2"> Strony </button></li>
-                    <li class="menu-btn__item"><button type="button" class="menu-btn__button"> Aplikacje </button></li>
+                    <li class="menu-btn__item"><button type="button" class="menu-btn__button menu-btn--size2"> Aplikacje </button></li>
                     <li class="menu-btn__item"><button type="button" class="menu-btn__button menu-btn--size1"> Dizajn </button></li>
                     <li class="menu-btn__item"><button type="button" class="menu-btn__button menu-btn--size2"> Marketing </button></li>
                 </ul>
@@ -187,7 +189,7 @@
                     <li class="images__item">
                         <div class="box-overlay">
                             <picture>
-                                <source srcset="./images/portfolio/pc/img6.jpg 1x, ./images/portfolio/pc/img2@6x.jpg 2x"
+                                <source srcset="./images/portfolio/pc/img6.jpg 1x, ./images/portfolio/pc/img6@2x.jpg 2x"
                                     media="(min-width: 1200px)">
                                 <source srcset="./images/portfolio/tablet/img6.jpg 1x, ./images/portfolio/mobile/img6@2x.jpg 2x"
                                     media="(min-width: 768px)">
@@ -277,20 +279,21 @@
         </section>
     </main>
 
-<footer class="footer section">
+<footer class="footer section ">
     <div class="container">
         <div class="footer--column">
-            <a class="logo logo--position link" href="./index.html">
+            <a class="logo logo--footer-position link" href="./index.html">
                 <span class="logo__first">Web</span><span class="logo__second">Studio</span></a>
-            <address class="address address--position address--colors address--column">m. Warszawa, Aleje Jerozolimskie
-                21
-                <p><a class="mail  mail--color-footer mail--position link"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-                <p><a class="phone-number phone-number--color-footer phone-number--position phone-number--translate-y link"
-                        href="tel:+48111111111">+48 111 111 111</a></p>
-            </address>
+            <address class="address address--footer-position address--colors address--column">m. Warszawa, Aleje
+                Jerozolimskie 21</address>
+            <p><a class="mail  mail--color-footer mail--footer-position link"
+                    href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+            <p><a class="phone-number phone-number--color-footer phone-number--footer-position phone-number--translate-y link"
+                    href="tel:+48111111111">+48 111 111 111</a></p>
+
         </div>
-        <div class="join">DOŁĄCZ DO NAS
+        <div class="join">
+            <p class="tittle-join">DOŁĄCZ DO NAS</p>
             <ul class="media media--dark list">
                 <li class="media__item">
                     <a class="media__link media__link--color-dark link" href="#">

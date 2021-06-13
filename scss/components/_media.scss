@@ -4,7 +4,6 @@
   display: flex;
   background-color: getColor(main-background);
   padding-bottom: 30px;
-  justify-content: center;
   color: getColor(media-background);
 
   &--margin-bottom {
@@ -13,9 +12,9 @@
 
   &--dark {
     background-color: getColor(dark-background);
-    width: 206px;
+
     margin-top: 20px;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   &__link {
@@ -34,6 +33,7 @@
     &--color-dark {
       background-color: getColor(media-dark);
       fill: getColor(media-color-light);
+      margin-right: 10px;
     }
 
     &:hover,
@@ -48,19 +48,31 @@
   width: 20px;
   height: 20px;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .media {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .media {
+    justify-content: center;
     &--dark {
-      margin-left: 137px;
+      justify-content: flex-end;
+      margin-right: -10px;
     }
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 1200px)  {
   .media {
-    &--dark {
-      margin-left: -40px;
+    
+    justify-content: center;
+
+    &--dark{
+      justify-content: flex-start;
+      
     }
+    
   }
 }
